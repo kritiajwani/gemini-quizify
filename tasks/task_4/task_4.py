@@ -4,7 +4,7 @@ import streamlit as st
 from langchain_google_vertexai import VertexAIEmbeddings
 import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "service_account_key.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "AuthKey.json"
 
 class EmbeddingClient:
     """
@@ -69,7 +69,7 @@ class EmbeddingClient:
 
 if __name__ == "__main__":
     model_name = "textembedding-gecko@003"
-    project = "quizify-radical-ai"
+    project = "sample-mission-quizzify"
     location = "us-central1"
 
     embedding_client = EmbeddingClient(model_name, project, location)
